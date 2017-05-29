@@ -16,6 +16,8 @@
       </ul>
     </div>
     这是主页
+    <p @click="sendAjax('http://127.0.0.1:8081/kuayu')">axios跨域测试</p>
+    <p @click="jQueryAjax('../../../static/test.json')">本地测试</p>
   </div>
 </template>
 <script>
@@ -29,7 +31,23 @@
     components:{
     },
     methods:{
-
+      sendAjax(url){
+        this.$http(url).then(res=>{
+          console.log(res);
+        }).catch(err=>{
+          console.log(err);
+        })
+      },
+      jQueryAjax(url){
+        $.ajax({
+          url:url,
+          type:"GET",
+          dataType:"json",
+          success:function(res){
+            console.log("ajax=>",res)
+          }
+        })
+      }
     }
 	}
 </script>

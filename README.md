@@ -2,6 +2,7 @@
 
 > A Vue.js project
 
+
 ## Build Setup
 
 ``` bash
@@ -25,6 +26,11 @@ npm run e2e
 
 # run all tests
 npm test
+
+#axios跨域问题
+Axios做路由的权限验证，如果服务器不好改cors,用jquery的ajax跨域(已配好)
+
+
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
