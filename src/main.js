@@ -3,10 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import Axios from './diy/axios'
+Vue.prototype.$http = Axios
+// 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
+
 
 import $ from 'jquery'
-import './assets/css/bootstrap.min.css'
-import './assets/js/bootstrap.min'
+import './public/css/bootstrap.min.css'
+import './public/js/bootstrap.min'
+
 
 Vue.config.productionTip = false
 
@@ -14,6 +20,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
-  components: { App }
+  store,
+  render:(h)=>h(App)
 })
