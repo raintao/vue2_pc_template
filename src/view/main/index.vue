@@ -39,6 +39,17 @@
         })
       },
       jQueryAjax(url){
+        // $.ajaxSettings.beforeSend = function(xhr,request){
+        //     console.log("xhr=>", xhr.setRequestHeader )
+        //     console.log("request=>" ,request )
+        //     console.log( "headers=>",request.headers )
+        //     request.headers={
+        //       Accept: "application/json; charset=utf-8"
+        //     };
+        //     // 在这里加上你的 token
+        //     console.log( "headers=>",request.headers )
+        // }
+
         $.ajax({
           url:url,
           type:"GET",

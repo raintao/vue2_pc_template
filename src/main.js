@@ -4,12 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import $ from './diy/jquery'
 import Axios from './diy/axios'
+
 Vue.prototype.$http = Axios
 // 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
 
 
-import $ from 'jquery'
+
+
 import './public/css/bootstrap.min.css'
 import './public/js/bootstrap.min'
 
