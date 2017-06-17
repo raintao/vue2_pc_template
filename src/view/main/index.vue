@@ -6,7 +6,7 @@
       <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="caret"></span>
         <span class="sr-only">Toggle Dropdown</span>
-      </button>
+      </button>     
       <ul class="dropdown-menu">
         <li><a href="#">Action</a></li>
         <li><a href="#">Another action</a></li>
