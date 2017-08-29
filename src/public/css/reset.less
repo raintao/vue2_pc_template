@@ -1,11 +1,17 @@
 body{
-    font-family: Arial,"Microsoft YaHei", Helvetica, sans-serif;
+    font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
     font-weight: 100;
     color:#1D262E;
     font-size: 14px;
     background: #F5F8FA;
+    margin:0;
+    padding:0;
+    overflow-y: scroll;
 }
-ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+*{
+  box-sizing: border-box;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,tr,td {
     margin:0;
     padding:0;
     border:none;
@@ -13,9 +19,13 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
 }
 a{text-decoration:none;color:#333;}
 a:hover,a:focus{text-decoration: none;}
-input,textarea,button{border:none;outline: none;}
+input,textarea,button{border:none;outline: none;font-size: 14px;}
+button{cursor: pointer;font-size: 14px;}
+input{
+  text-indent: 5px;
+}
 img{
-  border:0 none;
+  border:none;
   height:auto;
   max-width:100%;
   vertical-align:middle;
@@ -24,3 +34,7 @@ i, cite, em, var, address, dfn{
   font-style: normal;
 }
 p{line-height: 20px;}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
